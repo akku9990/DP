@@ -19,7 +19,7 @@ public class CountOfSubsetSum {
 
             }
         }
-        
+        return t[n][sum];
     }
     public static void main(String[] args) {
         Scanner scn=new Scanner( System.in);
