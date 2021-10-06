@@ -18,6 +18,11 @@ public class CountNoOfSubsetWithGivenDiff {
     public static int countSubset(int []arr,int n,int d,int sum){
         int sum1=(d+sum)/2;
         int [][]t=new  int[n+1][sum1+1];
+        for(int i=0;i<t.length;i++) //Initialisation
+            for(int j=0;j<t[0].length;j++){
+                if(i==0)t[i][j]=0;
+                if(j==0)t[i][j]=1;
+            }
         
         for(int i=1;i<t.length;i++)
             for(int j=1;j<t[0].length;j++){
