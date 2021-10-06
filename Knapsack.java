@@ -18,7 +18,9 @@ public class Knapsack {
             }
         return t[n][W];
     }
-    
+    public static  int max(int a,int b){
+        return a>b?a:b;
+    }
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
         System.out.println("Size of Array");
